@@ -42,16 +42,16 @@ The Student Course Grade Tracker API is a REST API built with Python, FastAPI, P
 
 Windows PowerShell:
 
-```powershell
+powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
-```
+
 
 ### 2. Install dependencies
 
-```powershell
+powershell
 python -m pip install fastapi uvicorn sqlalchemy "psycopg[binary]" pydantic pytest httpx
-```
+
 
 ### 3. Configure PostgreSQL
 
@@ -63,15 +63,15 @@ Do not commit real passwords or other secrets to version control.
 
 ### 4. Create the database table
 
-```powershell
+powershell
 python create_tables.py
-```
+
 
 ### 5. Start the API
 
-```powershell
+powershell
 python -m uvicorn main:app --reload
-```
+
 
 ### 6. Open API documentation
 
@@ -93,9 +93,9 @@ http://127.0.0.1:8000/docs
 
 Run:
 
-```powershell
+powershell
 python -m pytest -v
-```
+
 
 The tests cover CRUD operations, duplicate prevention, invalid inputs, missing records, optional updates, and letter-grade calculations.
 
